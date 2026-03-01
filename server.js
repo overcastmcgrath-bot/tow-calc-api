@@ -55,6 +55,7 @@ app.post("/tow-calc", (req, res) => {
   trailerExceeded: Boolean(trailerExceeded),
   tongueExceeded: Boolean(tongueExceeded),
   safeToTow: Boolean(safeToTow)
+  }
 });
   
 });

@@ -53,7 +53,8 @@ app.post("/tow-calc", (req, res) => {
   tongueExceeded: Boolean(tongueExceeded),
   safeToTow: Boolean(safeToTow)
 });
-
+  
+});
 app.get("/", (req, res) => {
   res.send("Tow calculator API is running.");
 });

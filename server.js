@@ -43,19 +43,15 @@ app.post("/tow-calc", (req, res) => {
     !tongueExceeded;
 
   res.json({
-    calculations: {
   payloadUsed: payload,
   tongueWeight,
   vehicleLoaded,
-  combinedWeight
-  },
-  limits: {         
+  combinedWeight,
   gvwrExceeded: Boolean(gvwrExceeded),
   gcwrExceeded: Boolean(gcwrExceeded),
   trailerExceeded: Boolean(trailerExceeded),
   tongueExceeded: Boolean(tongueExceeded),
   safeToTow: Boolean(safeToTow)
-  }
 });
   
 });
